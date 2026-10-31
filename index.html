@@ -82,7 +82,7 @@ nav a:hover,nav a.on{color:var(--gold)}
 .feat div{text-align:center}.feat i{display:block;font-style:normal;font-size:1.6rem}
 .tag{display:inline-block;transform:rotate(-6deg);border:1px dashed var(--gold);padding:4px 14px;border-radius:8px;color:var(--gold);margin-top:22px}
 @media(max-width:760px){
- .hero{padding:28px 0;text-align:center;min-height:calc(100vh - 60px);min-height:calc(100svh - 60px);display:flex;align-items:center;justify-content:center}
+ .hero{padding:34px 0 40px;text-align:center;display:flex;align-items:center;justify-content:center}
  .hero .wrap{grid-template-columns:1fr;gap:22px;width:100%}
  .hero h1{font-size:1.7rem;line-height:1.4}
  .hero h1 span{margin-top:4px;font-size:1.25rem}
@@ -200,6 +200,57 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;
  .cta-card{padding:18px}
  .cta-num{display:none}
 }
+
+html,body{overflow-x:hidden}
+img,svg{max-width:100%}
+.pick{background:var(--cream);padding:0 0 46px;position:relative}
+.pick .wrap{position:relative;margin-top:-34px}
+.pick-head{text-align:center;margin-bottom:18px;padding-top:56px}
+.pick-head h2{font-size:1.6rem}
+.pick-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.city{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 16px 36px rgba(74,42,26,.14);border:1px solid var(--line);display:flex;flex-direction:column}
+.city-top{display:flex;align-items:center;gap:14px;padding:18px 20px;color:#fff}
+.city.jed .city-top{background:linear-gradient(135deg,#6b3f26,#3a2012)}
+.city.mak .city-top{background:linear-gradient(135deg,#2f5d3a,#173a22)}
+.city-ic{flex:none;width:54px;height:54px;border-radius:16px;background:rgba(255,255,255,.16);display:grid;place-items:center;font-size:1.8rem}
+.city-top h3{font-size:1.25rem;font-weight:900;line-height:1.35}
+.city-top small{display:block;font-weight:400;opacity:.85;font-size:.82rem}
+.city-body{padding:16px 20px 20px;display:flex;flex-direction:column;gap:14px;flex:1}
+.city-body ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.city-body li{background:var(--cream);border:1px solid var(--line);border-radius:30px;padding:3px 12px;font-size:.82rem;color:var(--brown);font-weight:600}
+.city-body p{font-size:.88rem;color:#6b574b;line-height:1.8}
+.city-act{display:grid;grid-template-columns:1fr auto;gap:10px;margin-top:auto}
+.city-act a{display:flex;align-items:center;justify-content:center;gap:8px;border-radius:14px;min-height:48px;font-weight:700;font-size:.95rem}
+.city-act .w{background:var(--wa);color:#fff;padding:0 14px;box-shadow:none;border-radius:14px}
+.city-act .c{background:var(--cream);border:1px solid var(--line);color:var(--brown);width:54px}
+.city-act .ic{width:22px;height:22px}
+.city-more{text-align:center;font-size:.85rem;color:var(--brown2);font-weight:700;padding-bottom:2px}
+.city-more:hover{color:var(--gold)}
+@media(max-width:760px){
+ .pick .wrap{margin-top:-20px;padding:0 14px}
+ .pick-head{padding-top:44px}
+ .pick-head h2{font-size:1.3rem}
+ .pick-grid{grid-template-columns:1fr;gap:14px}
+ .city{border-radius:18px}
+ .city-top{padding:14px 16px}.city-top h3{font-size:1.1rem}
+ .city-body{padding:14px 16px 16px;gap:12px}
+ h2{font-size:1.35rem}
+ .seo h2{font-size:1.3rem}.seo h3{font-size:1.08rem}
+ .seo p,.seo li{font-size:.95rem;line-height:1.95}
+ .seo,.types,.why,.gallery,.split,.steps,.cta{padding-top:40px;padding-bottom:40px}
+ .wrap{padding:0 16px}
+ .areas div{padding:10px 12px}
+ .t .pic{height:84px}
+ .cta-card{text-align:right}
+ .btn-wa{padding:11px 20px}
+ .hb{width:100%;justify-content:center}
+ .hero-btns{flex-direction:column;align-items:stretch}
+ .float-wa,.float-call{left:12px;width:52px;height:52px}
+ .float-wa{bottom:14px}.float-call{bottom:76px}
+ footer{padding-bottom:84px}
+ footer .wrap{flex-direction:column;text-align:center}
+ .st-box{min-width:0;width:100%}
+}
 </style>
 </head>
 <body>
@@ -242,6 +293,41 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;
   </div>
 </section>
 
+<section class="pick" id="cities" aria-labelledby="pick-t">
+  <div class="wrap">
+    <div class="pick-head">
+      <h2 id="pick-t">اختر مدينتك وبيع أثاثك المستعمل</h2>
+      <p class="sub">نصلك في جدة ومكة المكرمة – معاينة مجانية ودفع فوري</p>
+    </div>
+    <div class="pick-grid">
+      <article class="city jed">
+        <div class="city-top"><span class="city-ic">🌊</span><h3>شراء أثاث مستعمل جدة<small>شمال · وسط · جنوب جدة</small></h3></div>
+        <div class="city-body">
+          <ul><li>مكيفات</li><li>عفش كامل</li><li>غرف نوم</li><li>كنب</li><li>مطابخ</li><li>خردة</li></ul>
+          <p>نغطي أبحر والروضة والسلامة والصفا والنعيم والحمراء وغيرها من أحياء جدة.</p>
+          <div class="city-act">
+            <a class="w" href="https://wa.me/966533172957?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A8%D9%8A%D8%B9%20%D8%A3%D8%AB%D8%A7%D8%AB%20%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84%20%D9%81%D9%8A%20%D8%AC%D8%AF%D8%A9" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>بيع في جدة</a>
+            <a class="c" href="tel:+966533172957" aria-label="اتصل بنا"><svg class="ic" aria-hidden="true"><use href="#i-call"/></svg></a>
+          </div>
+          <a class="city-more" href="#jeddah">عرض أحياء جدة ←</a>
+        </div>
+      </article>
+      <article class="city mak">
+        <div class="city-top"><span class="city-ic">🕋</span><h3>شراء أثاث مستعمل مكة<small>جميع أحياء مكة المكرمة</small></h3></div>
+        <div class="city-body">
+          <ul><li>مكيفات</li><li>عفش كامل</li><li>غرف نوم</li><li>كنب</li><li>مطابخ</li><li>خردة</li></ul>
+          <p>نغطي العزيزية والشوقية والنسيم والعوالي والشرائع والزاهر والرصيفة وضواحي مكة.</p>
+          <div class="city-act">
+            <a class="w" href="https://wa.me/966533172957?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A8%D9%8A%D8%B9%20%D8%A3%D8%AB%D8%A7%D8%AB%20%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84%20%D9%81%D9%8A%20%D9%85%D9%83%D8%A9" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>بيع في مكة</a>
+            <a class="c" href="tel:+966533172957" aria-label="اتصل بنا"><svg class="ic" aria-hidden="true"><use href="#i-call"/></svg></a>
+          </div>
+          <a class="city-more" href="#makkah">عرض أحياء مكة ←</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="cta" id="about">
   <div class="wrap">
     <h2>بيع أثاثك الآن في جدة أو مكة… بضغطة واحدة</h2>
@@ -269,15 +355,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;
       <div class="t"><div class="pic">❄️<img src="%D8%B4%D8%B1%D8%A7%D8%A1%20%D9%85%D9%83%D9%8A%D9%81%D8%A7%D8%AA.jpeg" alt="شراء مكيفات مستعملة بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>شراء مكيفات</h4><p>سبليت - شباك - دولابي</p></div>
       <div class="t"><div class="pic">🛏️<img src="%D8%BA%D8%B1%D9%81%20%D9%86%D9%88%D9%85.jpg" alt="شراء غرف نوم مستعملة بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>غرف نوم</h4><p>سراير - دواليب - تسريحات</p></div>
       <div class="t"><div class="pic">🛋️<img src="%D8%B4%D8%B1%D8%A7%D8%A1%20%D9%83%D9%86%D8%A8%20%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84.jpg" alt="شراء كنب ومجالس مستعملة بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>كنب ومجالس</h4><p>كنب - جلسات - كراسي</p></div>
-      <div class="t"><div class="pic">🧸<img src="kids.webp" alt="شراء غرف أطفال مستعملة بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>غرف أطفال</h4><p>مكاتب - دواليب - أسرة</p></div>
-      <div class="t"><div class="pic">🍽️<img src="dining.webp" alt="شراء سفر وطاولات طعام مستعملة بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>طاولات وسفرات</h4><p>طاولات طعام - كراسي</p></div>
+      <div class="t"><div class="pic">🧸<img src="%D8%BA%D8%B1%D9%81%20%D8%A7%D8%B7%D9%81%D8%A7%D9%84.jpg" alt="شراء غرف أطفال مستعملة بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>غرف أطفال</h4><p>مكاتب - دواليب - أسرة</p></div>
+      <div class="t"><div class="pic">🍽️<img src="%D8%B7%D8%A7%D9%88%D9%84%D8%A7%D8%AA%20%D9%88%D8%B3%D9%81%D8%B1%D8%A7%D8%AA.jpg" alt="شراء سفر وطاولات طعام مستعملة بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>طاولات وسفرات</h4><p>طاولات طعام - كراسي</p></div>
       <div class="t"><div class="pic">🍳<img src="%D8%B4%D8%B1%D8%A7%D8%A1%20%D9%85%D8%B7%D8%A7%D8%A8%D8%AE%20%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84.jpg" alt="شراء مطابخ مستعملة بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>مطابخ</h4><p>مطابخ كاملة - وحدات</p></div>
-      <div class="t"><div class="pic">🖥️<img src="office.webp" alt="شراء أثاث مكتبي مستعمل بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>أثاث مكتبي</h4><p>مكاتب - كراسي - خزائن</p></div>
+      <div class="t"><div class="pic">🖥️<img src="%D8%A7%D8%AB%D8%A7%D8%AB%20%D9%85%D9%83%D8%AA%D8%A8%D9%8A.webp" alt="شراء أثاث مكتبي مستعمل بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>أثاث مكتبي</h4><p>مكاتب - كراسي - خزائن</p></div>
       <div class="t"><div class="pic">🧺<img src="%D8%B4%D8%B1%D8%A7%D8%A1%20%D8%AB%D9%84%D8%A7%D8%AC%D8%A7%D8%AA%20%D9%88%D8%A7%D8%AC%D9%87%D8%B2%D8%A9%20%D9%85%D8%B3%D8%AA%D8%B9%D9%85%D9%84%D9%87.jpg" alt="شراء ثلاجات وغسالات مستعملة بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>ثلاجات وأجهزة</h4><p>ثلاجات - غسالات - أفران</p></div>
-      <div class="t"><div class="pic">🧶<img src="rugs.webp" alt="شراء سجاد ومفروشات مستعملة بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>مفروشات وسجاد</h4><p>سجاد - ستائر - مفروشات</p></div>
-      <div class="t"><div class="pic">🏺<img src="decor.webp" alt="شراء تحف وديكورات بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>تحف وديكورات</h4><p>إكسسوارات - لوحات</p></div>
-      <div class="t"><div class="pic">🪑<img src="outdoor.webp" alt="شراء جلسات خارجية وأثاث حديد بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>أثاث حديد وخشب</h4><p>جلسات خارجية - مظلات</p></div>
-      <div class="t"><div class="pic">♻️<img src="scrap.webp" alt="شراء خردة بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>شراء خردة</h4><p>خردة وقطع وأغراض قديمة</p></div>
+      <div class="t"><div class="pic">🧶<img src="%D9%85%D9%81%D8%B1%D9%88%D8%B4%D8%A7%D8%AA%20%D9%88%D8%B3%D8%AC%D8%A7%D8%AF.webp" alt="شراء سجاد ومفروشات مستعملة بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>مفروشات وسجاد</h4><p>سجاد - ستائر - مفروشات</p></div>
+      <div class="t"><div class="pic">🏺<img src="تجف وديكورات.webp" alt="شراء تحف وديكورات بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>تحف وديكورات</h4><p>إكسسوارات - لوحات</p></div>
+      <div class="t"><div class="pic">🪑<img src="%D8%A7%D8%AB%D8%A7%D8%AB%20%D8%AD%D8%AF%D9%8A%D8%AF.webp" alt="شراء جلسات خارجية وأثاث حديد بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>أثاث حديد وخشب</h4><p>جلسات خارجية - مظلات</p></div>
+      <div class="t"><div class="pic">♻️<img src="%D8%AE%D8%B1%D8%AF%D8%A9.webp" alt="شراء خردة بجدة ومكة" width="300" height="200" loading="lazy" onerror="imgErr(this)"></div><h4>شراء خردة</h4><p>خردة وقطع وأغراض قديمة</p></div>
     </div>
   </div>
 </section>
@@ -336,10 +422,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;
   <div class="wrap">
     <h2>شراء أثاث مستعمل جدة ومكة المكرمة بأعلى سعر وأسرع خدمة</h2>
     <p>إذا كنت تبحث عن <strong>شراء أثاث مستعمل جدة</strong> أو <strong>شراء أثاث مستعمل مكة</strong> أو <strong>محل شراء أثاث مستعمل</strong>، فأنت في المكان الصحيح. نشتري الأثاث المنزلي والمكتبي والأجهزة المستعملة من جميع أحياء جدة ومكة المكرمة، ونأتي إلى بيتك لمعاينته وتقييمه وتحديد السعر، ثم ندفع لك فوراً وننقل الأثاث على حسابنا. سواء كنت تنتقل إلى منزل جديد، أو تجدد ديكور بيتك، أو تريد التخلص من أثاث زائد، نوفر عليك الوقت والجهد.</p>
-    <nav class="cities" aria-label="مدن الخدمة">
+    <div class="cities" aria-label="مدن الخدمة">
       <a href="#jeddah">شراء أثاث مستعمل جدة<small>شمال · وسط · جنوب جدة</small></a>
       <a href="#makkah">شراء أثاث مستعمل مكة المكرمة<small>جميع أحياء مكة وضواحيها</small></a>
-    </nav>
+    </div>
 
     <h3>شراء مكيفات بجدة ومكة – مكيفات مستعملة بأعلى سعر</h3>
     <p>من أكثر الطلبات علينا <strong>شراء مكيفات بجدة ومكة</strong>. نشتري المكيفات المستعملة بجميع أنواعها: <strong>سبليت</strong> و<strong>شباك</strong> و<strong>دولابي</strong> و<strong>صحراوي</strong> وكذلك المكيفات المركزية عند فك المباني، سواء كانت <strong>شغالة أو معطلة (خربانة) أو خردة وسكراب</strong>. نعاين المكيف في موقعك، ونحدد السعر حسب الماركة والحجم بالطن وسنة الصنع وحالة الكمبروسر، ثم ندفع لك فوراً ونتولى الفك والنقل. وإذا كنت تنتقل أو تستبدل مكيفاتك بأحدث، فبيعها لنا أسهل من الإعلان عنها وانتظار المشتري.</p>
